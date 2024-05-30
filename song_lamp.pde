@@ -34,7 +34,7 @@ void draw() {
   translate(width/2, height/2);
   beginShape();
   for (int i = 0; i < volhistory.size(); i++) {
-    float angle = map(i, 0, volhistory.size(), 0, TWO_PI);  // Map i to angle from 0 to 2*PI
+    float angle = map(i, 0, volhistory.size(), 0, TWO_PI);
     int r = (int) map(volhistory.get(i), 0, 1, 10, 100);
     float x = r * cos(angle);
     float y = r * sin(angle);
